@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - ReStore</title>
+    <link rel="stylesheet" href="style.css"> <!-- Menggunakan CSS utama untuk header dll. -->
+    <link rel="stylesheet" href="checkout.css"> <!-- CSS khusus halaman checkout -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <!-- Gambar logo ReStore -->
+                <!-- COMMENT: Tempat untuk gambar logo ReStore -->
+                ReStore
+            </div>
+             <!-- Judul Checkout di header -->
+            <div class="page-title">
+                Checkout
+            </div>
+            <div class="search-bar" style="visibility: hidden;">
+                 <!-- Search bar disembunyikan di halaman checkout sesuai desain -->
+                <input type="text" placeholder="Cari produk">
+                 <!-- Ikon filter -->
+                <img src="" alt="Filter Icon">
+            </div>
+        </div>
+    </header>
+
+    <div class="container checkout-container">
+        <section class="shipping-address">
+            <div class="section-header">
+                 <!-- Ikon lokasi -->
+                 <!-- COMMENT: Tempat untuk ikon lokasi -->
+                 <img src="asset/Vector.png" alt="Location Icon"> <!-- Placeholder for icon -->
+                <h2>Alamat Pengiriman</h2>
+            </div>
+            <div class="address-details">
+                <p class="user-name">JohnDoe (+62)81xxxxxxxxxx</p>
+                <div class="address-line">
+                    <span class="street">Jalan ______________________________________</span>
+                    <div class="address-actions">
+                        <button class="label-button">Utama</button>
+                        <button class="change-button">Ubah</button>
+                    </div>
+                </div>
+            </div>
+            <div class="dropshipper">
+                <input type="checkbox" id="dropshipper">
+                <label for="dropshipper">Kirim sebagai dropshipper</label>
+            </div>
+        </section>
+
+        <section class="ordered-products">
+            <h2>Produk dipesan</h2>
+            <div class="store-section">
+                <div class="store-name">
+                    <button class="mitra-button">Mitra+</button>
+                    <span>Nama toko ___</span> <!-- Garis bawah nama toko -->
+                </div>
+                <button class="chat-button">Chat sekarang</button>
+            </div>
+            <div class="product-item-checkout">
+                <div class="product-image-checkout">
+                     <!-- Gambar produk -->
+                     <!-- COMMENT: Tempat untuk gambar produk di checkout -->
+                    <img src="asset/image 7.png" alt="Product Image"> <!-- Placeholder for product image -->
+                </div>
+                <div class="product-details-checkout">
+                    <p class="item-name">Nama barang ___</p> <!-- Garis bawah nama barang -->
+                    <div class="item-pricing">
+                        <div class="price-quantity">
+                             <p>Harga satuan</p><p>Rp. ___</p> <!-- Garis bawah harga satuan -->
+                        </div>
+                        <div class="price-quantity">
+                             <p>Jumlah</p><p>1</p>
+                        </div>
+                        <div class="subtotal-item">
+                             <p>Subtotal Produk</p><p>Rp. ___</p> <!-- Garis bawah subtotal produk -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- Placeholder untuk produk lain jika ada -->
+            <div class="product-item-checkout placeholder"></div>
+
+            <div class="voucher-section">
+                <p class="voucher-label">Voucher</p>
+                <button class="voucher-button">-100rb</button>
+                <button class="change-voucher">Ganti Voucher</button>
+            </div>
+
+             <div class="message-section">
+                 <p>Pesan</p>
+                 <input type="text" placeholder="(Opsional)">
+             </div>
+
+             <div class="shipping-option">
+                 <p>Opsi pengiriman : Reguler</p>
+                 <button class="change-button">Ubah</button>
+                 <p class="shipping-price">Rp. ___</p> <!-- Garis bawah harga pengiriman -->
+             </div>
+
+        </section>
+
+        <section class="payment-method">
+            <h2>Metode Pembayaran</h2>
+            <div class="payment-details">
+                 <span>COD</span>
+                 <button class="change-button">Ubah</button>
+            </div>
+        </section>
+
+        <section class="payment-summary">
+             <div class="summary-row">
+                 <span>Subtotal untuk produk</span>
+                 <span class="summary-price">Rp. ___</span> <!-- Garis bawah harga summary -->
+             </div>
+              <div class="summary-row">
+                 <span>Subtotal Pengiriman</span>
+                 <span class="summary-price">Rp. ___</span> <!-- Garis bawah harga summary -->
+             </div>
+              <div class="summary-row">
+                 <span>Biaya layanan</span>
+                 <span class="summary-price">Rp. ___</span> <!-- Garis bawah harga summary -->
+             </div>
+              <div class="summary-row">
+                 <span>Voucher Diskon</span>
+                 <span class="summary-price">Rp. ___</span> <!-- Garis bawah harga summary -->
+             </div>
+             <div class="total-payment">
+                 <span>Total Pembayaran</span>
+                 <span class="total-price">Rp. ____</span> <!-- Garis bawah total harga -->
+             </div>
+        </section>
+
+        <div class="terms-text">
+            <p>Dengan mengklik "Buat pesanan" Anda telah menyetujui <a href="#">Syarat & Ketentuan</a> ReStore</p>
+        </div>
+
+        <button class="create-order-button">Buat Pesanan</button>
+    </div>
+
+</body>
+</html>
